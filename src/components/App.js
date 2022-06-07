@@ -8,6 +8,16 @@ function NavBar() {
   );
 }
 
+class About extends React.Component {
+  render(){
+    return (
+      <div id="about"> 
+        <h3>About</h3>
+      </div>
+    )
+  }
+}
+
 function Home() {
   return (
     <div id="home">
@@ -23,8 +33,8 @@ function App() {
   return (
     <div>
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Home />
+      <About />
     </div>
   );
 }
